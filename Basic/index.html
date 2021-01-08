@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    body {
+        font-family: 'Inconsolata', monospace;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    header::before{
+        background: url("image/bg.jpg") no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .left {
+        display: inline-block;
+        /*border: 3px solid white;*/
+        position: absolute;
+        left: 22px;
+        top: 22px;
+        padding: 15px;
+    }
+
+    .left img {
+        width: 80px;
+        padding: 3px 13px;
+    }
+
+    .mid {
+        display: block;
+        width: 600px;
+        /*border: 3px solid white;*/
+        margin: 20px auto;
+        top: 22px;
+
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 3px solid white; */
+        position: absolute;
+        right: 22px;
+        top: 22px;
+        padding: 15px;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar li {
+        display: flex;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover, .navbar li a.active {
+        color: #726e6f;
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Inconsolata', monospace;
+        background-color: green;
+        color: aliceblue;
+        border: 3px;
+        border-radius: 10px;
+        margin: 0px 7px;
+        padding: 4px 14px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(11, 189, 11);
+    }
+
+    .container {
+        border: 3px solid white;
+        border-radius: 16px;
+        width: 34%;
+        margin: 118px auto;
+        padding: 32px 34px;
+    }
+    .container h1{
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: 'Inconsolata', monospace;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 192px;
+        margin: 8px auto;
+        padding: 3px;
+        border: 3px solid green;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .container button{
+        display: block;
+        width: 48%;
+        margin: 12px auto;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href='#' class="active">Home</a></li>
+                <li><a href='#'>About Us</a></li>
+                <li><a href='#'>Fitness Calculator</a></li>
+                <li><a href='#'>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join Now Surat's Best Gym</h1>
+
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
