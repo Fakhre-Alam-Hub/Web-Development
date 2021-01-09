@@ -1,0 +1,186 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+}
+
+/* Navigation bar: Logo and Image */
+#logo{
+    margin: 22px 22px;
+}
+#logo img{
+    height: 50px;
+    width: 70px;
+    border-radius: 1000px;
+}
+
+/* Navigation bar: List Stylinge */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: crimson;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 20px;
+    padding: 3px 10px;
+    border-radius:20px ;
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 642px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    font-family: 'Fraunces', serif;
+    color: white;
+    text-align: center;
+}
+#home p{
+    font-family: 'Fraunces', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    border: 3px solid brown;
+    padding: 14px;
+    margin: 16px;
+    border-radius: 24px;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Fraunces', serif;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-family: 'Fraunces', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 50px;
+}
+.client-item{
+    padding: 32px;
+}
